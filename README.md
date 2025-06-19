@@ -1,7 +1,4 @@
-# OBS DO DEV:
-## O codigo ainda contem MUITOS erros, eu to concertando eles (ainda), mas o website vai ficar mais ou menos assim:
-![image](https://github.com/user-attachments/assets/53776335-e2ee-44d8-8c4d-7a0a33908c5a)
-
+## O site funciona PERFEITAMENTE agora!
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
