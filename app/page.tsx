@@ -1,9 +1,19 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CalendarDays, GraduationCap, Users, BookOpen, MapPin, ArrowRight } from "lucide-react"
+import {
+  CalendarDays,
+  GraduationCap,
+  Users,
+  BookOpen,
+  MapPin,
+  ArrowRight,
+  Building2,
+  Microscope,
+  Globe,
+  Award,
+} from "lucide-react"
 import { HeroSection } from "@/components/hero-section"
 import { NewsCard } from "@/components/news-card"
 import { CampusCard } from "@/components/campus-card"
@@ -129,14 +139,11 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Campus da UFRJ"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+              <div className="text-center space-y-2">
+                <Building2 className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Campus da UFRJ</p>
+              </div>
             </div>
           </div>
         </div>
@@ -158,25 +165,25 @@ export default function HomePage() {
               name="Cidade Universitária"
               location="Ilha do Fundão"
               description="Sede de programas de engenharia, computação, ciências da saúde e ciências exatas."
-              imageSrc="/placeholder.svg?height=400&width=600"
+              imageSrc=""
             />
             <CampusCard
               name="Praia Vermelha"
               location="Rio de Janeiro"
               description="Abriga programas de comunicação, serviço social, história e psicologia."
-              imageSrc="/placeholder.svg?height=400&width=600"
+              imageSrc=""
             />
             <CampusCard
               name="Macaé"
               location="Macaé"
               description="Oferece programas em farmácia, enfermagem e ciências ambientais."
-              imageSrc="/placeholder.svg?height=400&width=600"
+              imageSrc=""
             />
             <CampusCard
               name="Duque de Caxias"
               location="Duque de Caxias"
               description="Foco em programas de formação de professores e ciências."
-              imageSrc="/placeholder.svg?height=400&width=600"
+              imageSrc=""
             />
           </div>
         </div>
@@ -186,14 +193,11 @@ export default function HomePage() {
       <section className="w-full py-12 md:py-16 lg:py-20">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="relative aspect-video overflow-hidden rounded-xl order-2 lg:order-1">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Programas Acadêmicos na UFRJ"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-muted rounded-xl order-2 lg:order-1">
+              <div className="text-center space-y-2">
+                <Microscope className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Programas Acadêmicos</p>
+              </div>
             </div>
             <div className="space-y-4 order-1 lg:order-2">
               <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Programas de Excelência</div>
@@ -357,14 +361,11 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Vida Estudantil na UFRJ"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+              <div className="text-center space-y-2">
+                <Globe className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Vida Estudantil</p>
+              </div>
             </div>
           </div>
         </div>
@@ -399,14 +400,11 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Estudantes da UFRJ"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-primary-foreground/10 rounded-xl">
+              <div className="text-center space-y-2">
+                <Award className="h-16 w-16 text-primary-foreground/70 mx-auto" />
+                <p className="text-primary-foreground/70 font-medium">Excelência Acadêmica</p>
+              </div>
             </div>
           </div>
         </div>

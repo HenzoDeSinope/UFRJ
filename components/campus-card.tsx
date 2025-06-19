@@ -1,8 +1,7 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin } from "lucide-react"
+import { MapPin, Building2 } from "lucide-react"
 
 interface CampusCardProps {
   name: string
@@ -11,11 +10,14 @@ interface CampusCardProps {
   imageSrc: string
 }
 
-export function CampusCard({ name, location, description, imageSrc }: CampusCardProps) {
+export function CampusCard({ name, location, description }: CampusCardProps) {
   return (
     <Card className="h-full flex flex-col overflow-hidden">
-      <div className="relative h-48 w-full">
-        <Image src={imageSrc || "/placeholder.svg"} alt={name} fill className="object-cover" />
+      <div className="flex items-center justify-center h-48 bg-muted">
+        <div className="text-center space-y-2">
+          <Building2 className="h-12 w-12 text-muted-foreground mx-auto" />
+          <p className="text-sm text-muted-foreground font-medium">{name}</p>
+        </div>
       </div>
       <CardHeader className="pb-2">
         <CardTitle className="text-lg">{name}</CardTitle>

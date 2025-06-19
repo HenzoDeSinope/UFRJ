@@ -14,7 +14,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import { ModeToggle } from "@/components/mode-toggle"
 import { Search, Menu, X } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { useState } from "react"
@@ -191,7 +190,6 @@ export function SiteHeader() {
           <Button variant="ghost" size="icon" aria-label="Pesquisar">
             <Search className="h-5 w-5" />
           </Button>
-          <ModeToggle />
           <Link href="/admissions" className="hidden md:inline-flex">
             <Button>Inscreva-se</Button>
           </Link>

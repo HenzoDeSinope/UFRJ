@@ -1,10 +1,21 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { HeroSection } from "@/components/hero-section"
-import { BookOpen, Code, Database, Server, Cpu, Network, Users, BrainCircuit } from "lucide-react"
+import {
+  BookOpen,
+  Code,
+  Database,
+  Server,
+  Cpu,
+  Network,
+  Users,
+  BrainCircuit,
+  GraduationCap,
+  Microscope,
+  Award,
+} from "lucide-react"
 
 export default function ComputerSciencePage() {
   return (
@@ -25,8 +36,8 @@ export default function ComputerSciencePage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About the Program</h2>
               <p className="text-muted-foreground">
                 The Computer Science program at UFRJ is offered by the Institute of Mathematics (IM-UFRJ) and forms
-                professionals with a soli by the Institute of Mathematics (IM-UFRJ) and forms professionals with a solid
-                foundation in computation theory, algorithms, data structures, and emerging technologies.
+                professionals with a solid foundation in computation theory, algorithms, data structures, and emerging
+                technologies.
               </p>
               <p className="text-muted-foreground">
                 Our program emphasizes both theoretical knowledge and practical skills, preparing students for careers
@@ -46,14 +57,11 @@ export default function ComputerSciencePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Computer Science Students"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+              <div className="text-center space-y-2">
+                <Code className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Computer Science Students</p>
+              </div>
             </div>
           </div>
         </div>
@@ -208,8 +216,8 @@ export default function ComputerSciencePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <Card>
               <CardHeader className="text-center">
-                <div className="mx-auto relative w-32 h-32 rounded-full overflow-hidden mb-4">
-                  <Image src="/placeholder.svg?height=128&width=128" alt="Professor" fill className="object-cover" />
+                <div className="mx-auto w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4">
+                  <GraduationCap className="h-16 w-16 text-muted-foreground" />
                 </div>
                 <CardTitle>Prof. Dr. Ana Rodrigues</CardTitle>
                 <CardDescription>Artificial Intelligence & Machine Learning</CardDescription>
@@ -224,8 +232,8 @@ export default function ComputerSciencePage() {
 
             <Card>
               <CardHeader className="text-center">
-                <div className="mx-auto relative w-32 h-32 rounded-full overflow-hidden mb-4">
-                  <Image src="/placeholder.svg?height=128&width=128" alt="Professor" fill className="object-cover" />
+                <div className="mx-auto w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4">
+                  <GraduationCap className="h-16 w-16 text-muted-foreground" />
                 </div>
                 <CardTitle>Prof. Dr. Roberto Almeida</CardTitle>
                 <CardDescription>Distributed Systems & Security</CardDescription>
@@ -240,8 +248,8 @@ export default function ComputerSciencePage() {
 
             <Card>
               <CardHeader className="text-center">
-                <div className="mx-auto relative w-32 h-32 rounded-full overflow-hidden mb-4">
-                  <Image src="/placeholder.svg?height=128&width=128" alt="Professor" fill className="object-cover" />
+                <div className="mx-auto w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4">
+                  <GraduationCap className="h-16 w-16 text-muted-foreground" />
                 </div>
                 <CardTitle>Prof. Dr. Carla Santos</CardTitle>
                 <CardDescription>Algorithms & Computational Theory</CardDescription>
@@ -296,14 +304,11 @@ export default function ComputerSciencePage() {
                 </li>
               </ul>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Computer Science Facilities"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-background rounded-xl">
+              <div className="text-center space-y-2">
+                <Microscope className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Computer Science Facilities</p>
+              </div>
             </div>
           </div>
         </div>
@@ -353,27 +358,21 @@ export default function ComputerSciencePage() {
                     </Link>
                   </div>
                 </div>
-                <div className="relative aspect-video overflow-hidden rounded-xl">
-                  <Image
-                    src="/placeholder.svg?height=720&width=1280"
-                    alt="Undergraduate Students"
-                    width={1280}
-                    height={720}
-                    className="object-cover"
-                  />
+                <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+                  <div className="text-center space-y-2">
+                    <Users className="h-16 w-16 text-muted-foreground mx-auto" />
+                    <p className="text-muted-foreground font-medium">Undergraduate Students</p>
+                  </div>
                 </div>
               </div>
             </TabsContent>
             <TabsContent value="graduate" className="mt-6">
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-                <div className="relative aspect-video overflow-hidden rounded-xl order-2 lg:order-1">
-                  <Image
-                    src="/placeholder.svg?height=720&width=1280"
-                    alt="Graduate Students"
-                    width={1280}
-                    height={720}
-                    className="object-cover"
-                  />
+                <div className="flex items-center justify-center h-64 bg-muted rounded-xl order-2 lg:order-1">
+                  <div className="text-center space-y-2">
+                    <GraduationCap className="h-16 w-16 text-muted-foreground mx-auto" />
+                    <p className="text-muted-foreground font-medium">Graduate Students</p>
+                  </div>
                 </div>
                 <div className="space-y-4 order-1 lg:order-2">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Graduate Programs</h2>
@@ -459,14 +458,11 @@ export default function ComputerSciencePage() {
                     </Link>
                   </div>
                 </div>
-                <div className="relative aspect-video overflow-hidden rounded-xl">
-                  <Image
-                    src="/placeholder.svg?height=720&width=1280"
-                    alt="Research Activities"
-                    width={1280}
-                    height={720}
-                    className="object-cover"
-                  />
+                <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+                  <div className="text-center space-y-2">
+                    <Microscope className="h-16 w-16 text-muted-foreground mx-auto" />
+                    <p className="text-muted-foreground font-medium">Research Activities</p>
+                  </div>
                 </div>
               </div>
             </TabsContent>
@@ -488,8 +484,8 @@ export default function ComputerSciencePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <Card>
               <CardHeader className="text-center">
-                <div className="mx-auto relative w-24 h-24 rounded-full overflow-hidden mb-4">
-                  <Image src="/placeholder.svg?height=96&width=96" alt="Alumni" fill className="object-cover" />
+                <div className="mx-auto w-24 h-24 rounded-full bg-muted flex items-center justify-center mb-4">
+                  <Award className="h-12 w-12 text-muted-foreground" />
                 </div>
                 <CardTitle>Marcos Oliveira</CardTitle>
                 <CardDescription>Class of 2018</CardDescription>
@@ -505,8 +501,8 @@ export default function ComputerSciencePage() {
 
             <Card>
               <CardHeader className="text-center">
-                <div className="mx-auto relative w-24 h-24 rounded-full overflow-hidden mb-4">
-                  <Image src="/placeholder.svg?height=96&width=96" alt="Alumni" fill className="object-cover" />
+                <div className="mx-auto w-24 h-24 rounded-full bg-muted flex items-center justify-center mb-4">
+                  <Award className="h-12 w-12 text-muted-foreground" />
                 </div>
                 <CardTitle>Juliana Costa</CardTitle>
                 <CardDescription>Class of 2020</CardDescription>
@@ -522,8 +518,8 @@ export default function ComputerSciencePage() {
 
             <Card>
               <CardHeader className="text-center">
-                <div className="mx-auto relative w-24 h-24 rounded-full overflow-hidden mb-4">
-                  <Image src="/placeholder.svg?height=96&width=96" alt="Alumni" fill className="object-cover" />
+                <div className="mx-auto w-24 h-24 rounded-full bg-muted flex items-center justify-center mb-4">
+                  <Award className="h-12 w-12 text-muted-foreground" />
                 </div>
                 <CardTitle>Rafael Santos</CardTitle>
                 <CardDescription>Class of 2016</CardDescription>
@@ -565,14 +561,11 @@ export default function ComputerSciencePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Computer Science Students"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+              <div className="text-center space-y-2">
+                <Code className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Join Our Program</p>
+              </div>
             </div>
           </div>
         </div>

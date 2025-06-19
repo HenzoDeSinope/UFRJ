@@ -1,9 +1,9 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { HeroSection } from "@/components/hero-section"
+import { Building2, Award, GraduationCap } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -46,14 +46,11 @@ export default function AboutPage() {
                     conhecida por sua excelência em ensino, pesquisa e atividades de extensão.
                   </p>
                 </div>
-                <div className="relative aspect-video overflow-hidden rounded-xl">
-                  <Image
-                    src="/placeholder.svg?height=720&width=1280"
-                    alt="Foto histórica da UFRJ"
-                    width={1280}
-                    height={720}
-                    className="object-cover"
-                  />
+                <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+                  <div className="text-center space-y-2">
+                    <Building2 className="h-16 w-16 text-muted-foreground mx-auto" />
+                    <p className="text-muted-foreground font-medium">Foto histórica da UFRJ</p>
+                  </div>
                 </div>
               </div>
             </TabsContent>
@@ -90,14 +87,11 @@ export default function AboutPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="relative aspect-video overflow-hidden rounded-xl order-1 lg:order-2">
-                  <Image
-                    src="/placeholder.svg?height=720&width=1280"
-                    alt="Missão da UFRJ"
-                    width={1280}
-                    height={720}
-                    className="object-cover"
-                  />
+                <div className="flex items-center justify-center h-64 bg-muted rounded-xl order-1 lg:order-2">
+                  <div className="text-center space-y-2">
+                    <Award className="h-16 w-16 text-muted-foreground mx-auto" />
+                    <p className="text-muted-foreground font-medium">Missão da UFRJ</p>
+                  </div>
                 </div>
               </div>
             </TabsContent>
@@ -114,8 +108,8 @@ export default function AboutPage() {
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   <Card>
                     <CardHeader className="text-center">
-                      <div className="mx-auto relative w-32 h-32 rounded-full overflow-hidden mb-4">
-                        <Image src="/placeholder.svg?height=128&width=128" alt="Reitor" fill className="object-cover" />
+                      <div className="mx-auto w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4">
+                        <GraduationCap className="h-16 w-16 text-muted-foreground" />
                       </div>
                       <CardTitle>Prof. Dr. João Silva</CardTitle>
                       <CardDescription>Reitor</CardDescription>
@@ -129,13 +123,8 @@ export default function AboutPage() {
 
                   <Card>
                     <CardHeader className="text-center">
-                      <div className="mx-auto relative w-32 h-32 rounded-full overflow-hidden mb-4">
-                        <Image
-                          src="/placeholder.svg?height=128&width=128"
-                          alt="Vice-Reitor"
-                          fill
-                          className="object-cover"
-                        />
+                      <div className="mx-auto w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4">
+                        <GraduationCap className="h-16 w-16 text-muted-foreground" />
                       </div>
                       <CardTitle>Profa. Dra. Maria Oliveira</CardTitle>
                       <CardDescription>Vice-Reitora</CardDescription>
@@ -149,13 +138,8 @@ export default function AboutPage() {
 
                   <Card>
                     <CardHeader className="text-center">
-                      <div className="mx-auto relative w-32 h-32 rounded-full overflow-hidden mb-4">
-                        <Image
-                          src="/placeholder.svg?height=128&width=128"
-                          alt="Diretor de Pesquisa"
-                          fill
-                          className="object-cover"
-                        />
+                      <div className="mx-auto w-32 h-32 rounded-full bg-muted flex items-center justify-center mb-4">
+                        <GraduationCap className="h-16 w-16 text-muted-foreground" />
                       </div>
                       <CardTitle>Prof. Dr. Carlos Santos</CardTitle>
                       <CardDescription>Diretor de Pesquisa</CardDescription>
@@ -208,14 +192,11 @@ export default function AboutPage() {
                 </li>
               </ul>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src="/placeholder.svg?height=720&width=1280"
-                alt="Prêmios da UFRJ"
-                width={1280}
-                height={720}
-                className="object-cover"
-              />
+            <div className="flex items-center justify-center h-64 bg-background rounded-xl">
+              <div className="text-center space-y-2">
+                <Award className="h-16 w-16 text-muted-foreground mx-auto" />
+                <p className="text-muted-foreground font-medium">Prêmios da UFRJ</p>
+              </div>
             </div>
           </div>
         </div>
@@ -234,14 +215,11 @@ export default function AboutPage() {
 
           <div className="mt-8 space-y-8">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="relative aspect-video overflow-hidden rounded-xl">
-                <Image
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Campus Cidade Universitária"
-                  width={1280}
-                  height={720}
-                  className="object-cover"
-                />
+              <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+                <div className="text-center space-y-2">
+                  <Building2 className="h-16 w-16 text-muted-foreground mx-auto" />
+                  <p className="text-muted-foreground font-medium">Campus Cidade Universitária</p>
+                </div>
               </div>
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">Cidade Universitária (Ilha do Fundão)</h3>
@@ -268,26 +246,20 @@ export default function AboutPage() {
                   <Button variant="outline">Explorar Campus</Button>
                 </Link>
               </div>
-              <div className="relative aspect-video overflow-hidden rounded-xl order-1 lg:order-2">
-                <Image
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Campus Praia Vermelha"
-                  width={1280}
-                  height={720}
-                  className="object-cover"
-                />
+              <div className="flex items-center justify-center h-64 bg-muted rounded-xl order-1 lg:order-2">
+                <div className="text-center space-y-2">
+                  <Building2 className="h-16 w-16 text-muted-foreground mx-auto" />
+                  <p className="text-muted-foreground font-medium">Campus Praia Vermelha</p>
+                </div>
               </div>
             </div>
 
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="relative aspect-video overflow-hidden rounded-xl">
-                <Image
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Campus Macaé"
-                  width={1280}
-                  height={720}
-                  className="object-cover"
-                />
+              <div className="flex items-center justify-center h-64 bg-muted rounded-xl">
+                <div className="text-center space-y-2">
+                  <Building2 className="h-16 w-16 text-muted-foreground mx-auto" />
+                  <p className="text-muted-foreground font-medium">Campus Macaé</p>
+                </div>
               </div>
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">Macaé</h3>
@@ -313,14 +285,11 @@ export default function AboutPage() {
                   <Button variant="outline">Explorar Campus</Button>
                 </Link>
               </div>
-              <div className="relative aspect-video overflow-hidden rounded-xl order-1 lg:order-2">
-                <Image
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Campus Duque de Caxias"
-                  width={1280}
-                  height={720}
-                  className="object-cover"
-                />
+              <div className="flex items-center justify-center h-64 bg-muted rounded-xl order-1 lg:order-2">
+                <div className="text-center space-y-2">
+                  <Building2 className="h-16 w-16 text-muted-foreground mx-auto" />
+                  <p className="text-muted-foreground font-medium">Campus Duque de Caxias</p>
+                </div>
               </div>
             </div>
           </div>

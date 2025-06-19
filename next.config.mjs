@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -10,25 +11,21 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
-        port: '',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: '*.public.blob.vercel-storage.com',
-        port: '',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-        port: '',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'via.placeholder.com',
-        port: '',
         pathname: '/**',
       }
     ],

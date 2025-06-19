@@ -10,9 +10,9 @@ export default function StudentLifePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <HeroSection
-        title="Student Life"
-        description="Discover the vibrant and diverse student experience at UFRJ, where academic excellence meets a rich campus life."
-        buttonText="Explore Student Organizations"
+        title="Vida Estudantil"
+        description="Descubra a experiência estudantil vibrante e diversificada na UFRJ, onde a excelência acadêmica encontra uma rica vida no campus."
+        buttonText="Explorar Organizações Estudantis"
         buttonLink="#organizations"
       />
 
@@ -20,23 +20,23 @@ export default function StudentLifePage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
-              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Campus Life</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Life at UFRJ</h2>
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Vida no Campus</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Vida na UFRJ</h2>
               <p className="text-muted-foreground">
-                At UFRJ, student life extends far beyond the classroom. Our vibrant campus community offers countless
-                opportunities for personal growth, social connection, and cultural enrichment. From student organizations
-                and athletics to arts and community service, there's something for everyone to explore and enjoy.
+                Na UFRJ, a vida estudantil vai muito além da sala de aula. Nossa comunidade vibrante oferece inúmeras
+                oportunidades para crescimento pessoal, conexão social e enriquecimento cultural. Desde organizações
+                estudantis e esportes até artes e serviço comunitário, há algo para todos explorarem e aproveitarem.
               </p>
               <p className="text-muted-foreground">
-                Our four campuses each have their own unique character and amenities, providing diverse environments for
-                living, learning, and recreation. Whether you're interested in sports, arts, activism, or academic clubs,
-                you'll find a community of like-minded peers and supportive resources to help you thrive.
+                Nossos quatro campi têm cada um seu caráter único e comodidades, proporcionando ambientes diversos para
+                viver, aprender e recrear. Seja você interessado em esportes, artes, ativismo ou clubes acadêmicos,
+                encontrará uma comunidade de pares com ideias semelhantes e recursos de apoio para ajudá-lo a prosperar.
               </p>
             </div>
             <div className="relative aspect-video overflow-hidden rounded-xl">
               <Image
                 src="/placeholder.svg?height=720&width=1280"
-                alt="UFRJ Campus Life"
+                alt="Vida no Campus da UFRJ"
                 width={1280}
                 height={720}
                 className="object-cover"
@@ -50,20 +50,20 @@ export default function StudentLifePage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Student Organizations</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Organizações Estudantis</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                With over 100 student organizations, UFRJ offers endless opportunities to pursue your interests, develop
-                leadership skills, and build lasting friendships.
+                Com mais de 100 organizações estudantis, a UFRJ oferece infinitas oportunidades para perseguir seus
+                interesses, desenvolver habilidades de liderança e construir amizades duradouras.
               </p>
             </div>
           </div>
 
           <Tabs defaultValue="academic" className="mt-8">
             <TabsList className="grid w-full grid-cols-4 max-w-2xl mx-auto">
-              <TabsTrigger value="academic">Academic</TabsTrigger>
-              <TabsTrigger value="cultural">Cultural</TabsTrigger>
-              <TabsTrigger value="service">Service</TabsTrigger>
-              <TabsTrigger value="recreational">Recreational</TabsTrigger>
+              <TabsTrigger value="academic">Acadêmicas</TabsTrigger>
+              <TabsTrigger value="cultural">Culturais</TabsTrigger>
+              <TabsTrigger value="service">Serviço</TabsTrigger>
+              <TabsTrigger value="recreational">Recreativas</TabsTrigger>
             </TabsList>
             <TabsContent value="academic" className="mt-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -72,18 +72,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <BookOpen className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Engineering Student Society</CardTitle>
+                    <CardTitle>Sociedade de Estudantes de Engenharia</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A student-led organization that organizes academic events, workshops, and competitions for
-                      engineering students.
+                      Uma organização liderada por estudantes que organiza eventos acadêmicos, workshops e competições
+                      para estudantes de engenharia.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/engineering-society" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -94,18 +94,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <BookOpen className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Computer Science Club</CardTitle>
+                    <CardTitle>Clube de Ciência da Computação</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A community of students passionate about computing, programming, and technology. The club hosts
-                      hackathons, coding competitions, and tech talks.
+                      Uma comunidade de estudantes apaixonados por computação, programação e tecnologia. O clube
+                      organiza hackathons, competições de programação e palestras técnicas.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/cs-club" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -116,18 +116,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <BookOpen className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Pre-Med Association</CardTitle>
+                    <CardTitle>Associação Pré-Medicina</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      An organization for students interested in medical careers, offering mentorship, shadowing
-                      opportunities, and preparation for medical school applications.
+                      Uma organização para estudantes interessados em carreiras médicas, oferecendo mentoria,
+                      oportunidades de observação e preparação para candidaturas à faculdade de medicina.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/pre-med" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -141,18 +141,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Music className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>UFRJ Choir</CardTitle>
+                    <CardTitle>Coral da UFRJ</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A student choir that performs classical, popular, and traditional Brazilian music at university
-                      events and community concerts.
+                      Um coral estudantil que apresenta música clássica, popular e tradicional brasileira em eventos
+                      universitários e concertos comunitários.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/choir" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -163,18 +163,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Palette className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Theater Group</CardTitle>
+                    <CardTitle>Grupo de Teatro</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A student-run theater company that produces plays and performances throughout the academic year,
-                      open to students from all disciplines.
+                      Uma companhia de teatro dirigida por estudantes que produz peças e apresentações durante o ano
+                      acadêmico, aberta a estudantes de todas as disciplinas.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/theater" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -185,18 +185,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Palette className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Cultural Diversity Association</CardTitle>
+                    <CardTitle>Associação de Diversidade Cultural</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      An organization dedicated to celebrating and promoting cultural diversity through events,
-                      workshops, and community engagement.
+                      Uma organização dedicada a celebrar e promover a diversidade cultural através de eventos,
+                      workshops e engajamento comunitário.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/cultural-diversity" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -210,18 +210,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Heart className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Volunteer Corps</CardTitle>
+                    <CardTitle>Corpo de Voluntários</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A student-led organization that coordinates volunteer opportunities in local communities, focusing
-                      on education, health, and environmental initiatives.
+                      Uma organização liderada por estudantes que coordena oportunidades de voluntariado em comunidades
+                      locais, focando em iniciativas de educação, saúde e meio ambiente.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/volunteer-corps" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -232,18 +232,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Heart className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Environmental Action Group</CardTitle>
+                    <CardTitle>Grupo de Ação Ambiental</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A group dedicated to promoting sustainability on campus and in the broader community through
-                      education, advocacy, and hands-on projects.
+                      Um grupo dedicado a promover sustentabilidade no campus e na comunidade mais ampla através de
+                      educação, advocacia e projetos práticos.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/environmental-action" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -254,18 +254,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Heart className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Community Outreach Initiative</CardTitle>
+                    <CardTitle>Iniciativa de Extensão Comunitária</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      An organization that connects students with local schools and community centers to provide
-                      tutoring, mentorship, and educational programs.
+                      Uma organização que conecta estudantes com escolas locais e centros comunitários para fornecer
+                      tutoria, mentoria e programas educacionais.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/community-outreach" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -279,18 +279,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Dumbbell className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Soccer Club</CardTitle>
+                    <CardTitle>Clube de Futebol</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A recreational and competitive soccer club open to students of all skill levels, with
-                      opportunities to participate in intramural and intercollegiate competitions.
+                      Um clube de futebol recreativo e competitivo aberto a estudantes de todos os níveis de habilidade,
+                      com oportunidades de participar em competições intramurais e intercolegiais.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/soccer-club" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -301,18 +301,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Dumbbell className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Hiking and Outdoor Adventure Club</CardTitle>
+                    <CardTitle>Clube de Trilha e Aventura</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A group that organizes hiking trips, camping excursions, and outdoor activities, taking advantage
-                      of Rio de Janeiro's beautiful natural surroundings.
+                      Um grupo que organiza trilhas, excursões de camping e atividades ao ar livre, aproveitando os
+                      belos arredores naturais do Rio de Janeiro.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/hiking-club" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -323,18 +323,18 @@ export default function StudentLifePage() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                       <Dumbbell className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle>Chess Club</CardTitle>
+                    <CardTitle>Clube de Xadrez</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-sm text-muted-foreground">
-                      A club for chess enthusiasts of all levels, offering regular meetings, tournaments, and
-                      opportunities to learn and improve chess skills.
+                      Um clube para entusiastas do xadrez de todos os níveis, oferecendo reuniões regulares, torneios e
+                      oportunidades para aprender e melhorar as habilidades no xadrez.
                     </p>
                   </CardContent>
                   <CardFooter>
                     <Link href="/student-life/organizations/chess-club" className="w-full">
                       <Button variant="outline" size="sm" className="w-full">
-                        Learn More
+                        Saiba Mais
                       </Button>
                     </Link>
                   </CardFooter>
@@ -345,7 +345,7 @@ export default function StudentLifePage() {
 
           <div className="flex justify-center mt-8">
             <Link href="/student-life/organizations">
-              <Button>View All Organizations</Button>
+              <Button>Ver Todas as Organizações</Button>
             </Link>
           </div>
         </div>
@@ -357,31 +357,31 @@ export default function StudentLifePage() {
             <div className="relative aspect-video overflow-hidden rounded-xl order-2 lg:order-1">
               <Image
                 src="/placeholder.svg?height=720&width=1280"
-                alt="UFRJ Athletics"
+                alt="Esportes da UFRJ"
                 width={1280}
                 height={720}
                 className="object-cover"
               />
             </div>
             <div className="space-y-4 order-1 lg:order-2">
-              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Athletics & Recreation</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sports & Fitness</h2>
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Esportes & Recreação</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Esportes & Fitness</h2>
               <p className="text-muted-foreground">
-                UFRJ offers a wide range of athletic and recreational opportunities for students of all interests and
-                abilities. From competitive intercollegiate sports to intramural leagues and fitness classes, there are
-                many ways to stay active and healthy.
+                A UFRJ oferece uma ampla gama de oportunidades esportivas e recreativas para estudantes de todos os
+                interesses e habilidades. Desde esportes intercolegiais competitivos até ligas intramurais e aulas de
+                fitness, há muitas maneiras de se manter ativo e saudável.
               </p>
               <p className="text-muted-foreground">
-                Our athletic facilities include gymnasiums, swimming pools, tennis courts, soccer fields, and fitness
-                centers across our campuses. Students can participate in organized sports, join fitness classes, or
-                simply enjoy recreational activities with friends.
+                Nossas instalações esportivas incluem ginásios, piscinas, quadras de tênis, campos de futebol e centros
+                de fitness em nossos campi. Os estudantes podem participar de esportes organizados, participar de aulas
+                de fitness ou simplesmente desfrutar de atividades recreativas com amigos.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/student-life/athletics">
-                  <Button>Athletic Programs</Button>
+                  <Button>Programas Esportivos</Button>
                 </Link>
                 <Link href="/student-life/recreation">
-                  <Button variant="outline">Recreational Activities</Button>
+                  <Button variant="outline">Atividades Recreativas</Button>
                 </Link>
               </div>
             </div>
@@ -393,9 +393,9 @@ export default function StudentLifePage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Campus Services</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Serviços do Campus</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                UFRJ provides a comprehensive range of services to support student well-being and success.
+                A UFRJ oferece uma gama abrangente de serviços para apoiar o bem-estar e sucesso dos estudantes.
               </p>
             </div>
           </div>
@@ -406,25 +406,25 @@ export default function StudentLifePage() {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                   <Home className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Housing</CardTitle>
+                <CardTitle>Moradia</CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-sm text-muted-foreground">
-                  UFRJ offers on-campus housing options for eligible students, with priority given to those with
-                  financial need and those from outside Rio de Janeiro. Our housing office also provides resources and
-                  assistance for students seeking off-campus accommodations.
+                  A UFRJ oferece opções de moradia no campus para estudantes elegíveis, com prioridade dada àqueles com
+                  necessidade financeira e àqueles de fora do Rio de Janeiro. Nosso escritório de moradia também fornece
+                  recursos e assistência para estudantes que procuram acomodações fora do campus.
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li>• On-campus residence halls</li>
-                  <li>• Off-campus housing resources</li>
-                  <li>• Roommate matching services</li>
-                  <li>• Housing advising</li>
+                  <li>• Residências no campus</li>
+                  <li>• Recursos de moradia fora do campus</li>
+                  <li>• Serviços de compatibilidade de colegas de quarto</li>
+                  <li>• Aconselhamento sobre moradia</li>
                 </ul>
               </CardContent>
               <CardFooter>
                 <Link href="/student-life/housing" className="w-full">
                   <Button variant="outline" size="sm" className="w-full">
-                    Housing Information
+                    Informações sobre Moradia
                   </Button>
                 </Link>
               </CardFooter>
@@ -435,25 +435,25 @@ export default function StudentLifePage() {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                   <Utensils className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Dining</CardTitle>
+                <CardTitle>Alimentação</CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-sm text-muted-foreground">
-                  Our campuses feature a variety of dining options, including cafeterias, restaurants, and cafes. The
-                  university's dining services are committed to providing nutritious, affordable meals with options to
-                  accommodate various dietary needs and preferences.
+                  Nossos campi apresentam uma variedade de opções de alimentação, incluindo refeitórios, restaurantes e
+                  cafés. Os serviços de alimentação da universidade estão comprometidos em fornecer refeições nutritivas
+                  e acessíveis com opções para acomodar várias necessidades e preferências dietéticas.
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li>• University cafeterias</li>
-                  <li>• Campus restaurants and cafes</li>
-                  <li>• Meal plans</li>
-                  <li>• Special dietary accommodations</li>
+                  <li>• Refeitórios universitários</li>
+                  <li>• Restaurantes e cafés do campus</li>
+                  <li>• Planos de refeição</li>
+                  <li>• Acomodações dietéticas especiais</li>
                 </ul>
               </CardContent>
               <CardFooter>
                 <Link href="/student-life/dining" className="w-full">
                   <Button variant="outline" size="sm" className="w-full">
-                    Dining Information
+                    Informações sobre Alimentação
                   </Button>
                 </Link>
               </CardFooter>
@@ -464,25 +464,25 @@ export default function StudentLifePage() {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Health & Wellness</CardTitle>
+                <CardTitle>Saúde & Bem-estar</CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-sm text-muted-foreground">
-                  UFRJ is committed to supporting the physical and mental health of our students. We offer
-                  comprehensive health services, counseling, and wellness programs to help students maintain a healthy
-                  balance in their academic and personal lives.
+                  A UFRJ está comprometida em apoiar a saúde física e mental de nossos estudantes. Oferecemos serviços
+                  de saúde abrangentes, aconselhamento e programas de bem-estar para ajudar os estudantes a manter um
+                  equilíbrio saudável em suas vidas acadêmicas e pessoais.
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li>• Student health center</li>
-                  <li>• Counseling services</li>
-                  <li>• Mental health resources</li>
-                  <li>• Wellness programs and workshops</li>
+                  <li>• Centro de saúde estudantil</li>
+                  <li>• Serviços de aconselhamento</li>
+                  <li>• Recursos de saúde mental</li>
+                  <li>• Programas e workshops de bem-estar</li>
                 </ul>
               </CardContent>
               <CardFooter>
                 <Link href="/student-life/health" className="w-full">
                   <Button variant="outline" size="sm" className="w-full">
-                    Health & Wellness Resources
+                    Recursos de Saúde & Bem-estar
                   </Button>
                 </Link>
               </CardFooter>
@@ -495,65 +495,66 @@ export default function StudentLifePage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
-              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Support Services</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Student Support</h2>
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Serviços de Apoio</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Apoio ao Estudante</h2>
               <p className="text-muted-foreground">
-                UFRJ provides a wide range of support services to help students navigate their academic journey and
-                personal development. Our dedicated staff and resources are available to assist students with academic
-                challenges, career planning, personal concerns, and more.
+                A UFRJ oferece uma ampla gama de serviços de apoio para ajudar os estudantes a navegar em sua jornada
+                acadêmica e desenvolvimento pessoal. Nossa equipe dedicada e recursos estão disponíveis para auxiliar os
+                estudantes com desafios acadêmicos, planejamento de carreira, preocupações pessoais e muito mais.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                 <Card>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base">Academic Advising</CardTitle>
+                    <CardTitle className="text-base">Orientação Acadêmica</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Guidance on course selection, academic planning, and degree requirements.
+                      Orientação sobre seleção de cursos, planejamento acadêmico e requisitos de graduação.
                     </p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base">Tutoring Services</CardTitle>
+                    <CardTitle className="text-base">Serviços de Tutoria</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Free tutoring in various subjects to help students succeed in their courses.
+                      Tutoria gratuita em várias disciplinas para ajudar os estudantes a ter sucesso em seus cursos.
                     </p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base">Career Services</CardTitle>
+                    <CardTitle className="text-base">Serviços de Carreira</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Career counseling, job search assistance, resume workshops, and internship opportunities.
+                      Aconselhamento de carreira, assistência na busca de emprego, workshops de currículo e
+                      oportunidades de estágio.
                     </p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base">Accessibility Services</CardTitle>
+                    <CardTitle className="text-base">Serviços de Acessibilidade</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Support and accommodations for students with disabilities to ensure equal access to education.
+                      Apoio e acomodações para estudantes com deficiências para garantir acesso igual à educação.
                     </p>
                   </CardContent>
                 </Card>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
                 <Link href="/student-life/support">
-                  <Button>Explore Support Services</Button>
+                  <Button>Explorar Serviços de Apoio</Button>
                 </Link>
               </div>
             </div>
             <div className="relative aspect-video overflow-hidden rounded-xl">
               <Image
                 src="/placeholder.svg?height=720&width=1280"
-                alt="Student Support Services"
+                alt="Serviços de Apoio ao Estudante"
                 width={1280}
                 height={720}
                 className="object-cover"
@@ -564,60 +565,80 @@ export default function StudentLifePage() {
       </section>
 
       <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
-            <div className="container px-4 md:px-6">
-              <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Campus Events</h2>
-                  <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    UFRJ hosts a wide variety of events throughout the year, from academic lectures and cultural
-                    performances to social gatherings and traditions.
-                  </p>
-                </div>
-              </div>
-    
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <Card className="h-full">
-                  <CardHeader>
-                    <CardTitle>Welcome Week</CardTitle>
-                    <CardDescription>August</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <p className="text-sm text-muted-foreground">
-                      A week of activities, events, and information sessions to welcome new students to UFRJ and help them
-                      acclimate to university life.
-                    </p>
-                  </CardContent>
-                  <CardFooter>
-                    <Link href="/student-life/events/welcome-week" className="w-full">
-                      <Button variant="outline" size="sm" className="w-full">
-                        Learn More
-                      </Button>
-                    </Link>
-                  </CardFooter>
-                </Card>
-    
-                <Card className="h-full">
-                  <CardHeader>
-                    <CardTitle>Cultural Festival</CardTitle>
-                    <CardDescription>October</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <p className="text-sm text-muted-foreground">
-                      An annual celebration of arts and culture featuring performances, exhibitions, workshops, and
-                      activities showcasing the diverse talents of the UFRJ community.
-                    </p>
-                  </CardContent>
-                  <CardFooter>
-                    <Link href="/student-life/events/cultural-festival" className="w-full">
-                      <Button variant="outline" size="sm" className="w-full">
-                        Learn More
-                      </Button>
-                    </Link>
-                  </CardFooter>
-                </Card>
-              </div>
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Eventos do Campus</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                A UFRJ organiza uma grande variedade de eventos durante o ano, desde palestras acadêmicas e
+                apresentações culturais até encontros sociais e tradições.
+              </p>
             </div>
-                      </section>
-                    </div>
-                );
-        }
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle>Semana de Boas-Vindas</CardTitle>
+                <CardDescription>Agosto</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <p className="text-sm text-muted-foreground">
+                  Uma semana de atividades, eventos e sessões informativas para dar as boas-vindas aos novos estudantes
+                  da UFRJ e ajudá-los a se aclimatarem à vida universitária.
+                </p>
+              </CardContent>
+              <CardFooter>
+                <Link href="/student-life/events/welcome-week" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full">
+                    Saiba Mais
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle>Festival Cultural</CardTitle>
+                <CardDescription>Outubro</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <p className="text-sm text-muted-foreground">
+                  Uma celebração anual de artes e cultura com apresentações, exposições, workshops e atividades que
+                  mostram os diversos talentos da comunidade UFRJ.
+                </p>
+              </CardContent>
+              <CardFooter>
+                <Link href="/student-life/events/cultural-festival" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full">
+                    Saiba Mais
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+
+            <Card className="h-full">
+              <CardHeader>
+                <CardTitle>Feira de Primavera</CardTitle>
+                <CardDescription>Setembro</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <p className="text-sm text-muted-foreground">
+                  Uma feira animada com comida, jogos, música e estandes de organizações estudantis, reunindo a
+                  comunidade do campus a cada primavera.
+                </p>
+              </CardContent>
+              <CardFooter>
+                <Link href="/student-life/events/spring-fair" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full">
+                    Saiba Mais
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
