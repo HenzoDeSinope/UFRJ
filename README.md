@@ -1,4 +1,5 @@
 ## O site funciona PERFEITAMENTE agora!
+## Pra rodar, você pode usar o link do website: https://ufrjproject.vercel.app
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
